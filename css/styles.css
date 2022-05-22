@@ -5,6 +5,8 @@
     --main-color: #212121;
     --add-color: #757575;
     --title-color: #212121;
+    --background-clr: #FFFFFF;
+    --add-bckgrnd-clr: #F5F4FA;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -67,6 +69,10 @@ body {
     color: var(--accent-color);
 }
 
+.header-link.link.current {
+    color: var(--accent-color)
+}
+
 .header-contacts-list {}
 
 .header-contacts-item {}
@@ -86,7 +92,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--add-color);
 }
-.hero {}
+.hero {
+    background-color:#2F303A;;
+}
 
 .hero-title {
     font-weight: 900;
@@ -96,7 +104,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #2F303A;
 }
 .hero-btn {
     font-family: inherit;
@@ -111,6 +118,7 @@ body {
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .hero-btn:hover, .hero-btn:focus {
@@ -154,7 +162,7 @@ body {
     height: 648px;
     left: 0px;
     top: 1449px;
-    background: #F5F4FA;
+    background: var(--add-bckgrnd-clr);
 }
 
 .team-title {}
@@ -162,7 +170,7 @@ body {
 .team-list {}
 
 .team-item {
-    background: #FFFFFF;
+    background: var(--background-clr);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -239,29 +247,25 @@ body {
     font-size: 16px; 
     line-height: 1.62;
     color:var(--main-color);
-    width: 128px;
-    height: 38px;
-    left: 576px;
-    top: 174px;
-    background: #F5F4FA;
+    background: var(--add-bckgrnd-clr);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .filters-btn:hover,
-.filters-btn:focus,
-.filters-btn:active {
+.filters-btn:focus {
     color: #FFFFFF;
     background: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+}
+.filters-btn.current-filter {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
 }
 
 .examples {}
 
 .examples-item {
-    background: #FFFFFF;
+    background: var(--background-clr);
     border: 1px solid #EEEEEE;
 }
 
